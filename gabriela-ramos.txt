@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 1) Empieza Pepito
-=======
 2) Empieza Juanita
 3) Termina Juanita
->>>>>>> master
+
