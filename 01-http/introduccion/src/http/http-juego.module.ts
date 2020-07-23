@@ -7,6 +7,6 @@ import {Module} from '@nestjs/common';
         providers:[],
     })
 
-export class HttpModule {
+export class HttpJuegoModule {
 
 }
