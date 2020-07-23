@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -20,9 +27,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\01-http\introduccion\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
@@ -38,6 +48,10 @@
       <workItem from="1595387073282" duration="659000" />
       <workItem from="1595389163534" duration="95000" />
       <workItem from="1595389269073" duration="1229000" />
+      <workItem from="1595429550501" duration="295000" />
+      <workItem from="1595429856460" duration="600000" />
+      <workItem from="1595434758476" duration="864000" />
+      <workItem from="1595470731069" duration="2542000" />
     </task>
     <servers />
   </component>
@@ -45,6 +59,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="633" y="291" key="#ESLint" timestamp="1595429662306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="633" y="291" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1595429662306" />
     <state x="655" y="248" width="496" height="327" key="#Notifications" timestamp="1595389533557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -53,10 +71,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1595387100633" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1595389252879">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1595475678667">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595389252879" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595475678667" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595389608494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
