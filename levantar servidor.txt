@@ -1,4 +1,7 @@
-Levantar el servicio, usando 
+Levantar el servicio,
+entramos por consola del NodeJs y usammos el path (direccion) 
+C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\01-http\introduccion\src\http
+ usando 
 npm run start:dev --> se levanta el servidor 
 
  
