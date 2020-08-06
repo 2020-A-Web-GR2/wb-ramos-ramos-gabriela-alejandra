@@ -26,15 +26,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/01-http" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="ts.external.directory.path" value="C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\01-http\introduccion\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\Deberes\examen\src\examen" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,7 +59,8 @@
       <workItem from="1595429856460" duration="600000" />
       <workItem from="1595434758476" duration="864000" />
       <workItem from="1595470731069" duration="16727000" />
-      <workItem from="1596678819892" duration="1271000" />
+      <workItem from="1596678819892" duration="7828000" />
+      <workItem from="1596687553839" duration="758000" />
     </task>
     <servers />
   </component>
@@ -73,13 +80,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1595387100633" />
+    <state x="481" y="152" key="FileChooserDialogImpl" timestamp="1596681537082">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="481" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596681537082" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1596680099534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596680099534" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595389608494">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596684203606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595389608494" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596684203606" />
   </component>
 </project>

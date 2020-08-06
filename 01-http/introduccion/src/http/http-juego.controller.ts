@@ -13,6 +13,8 @@ import {
     Res,
     Headers
 } from "@nestjs/common";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import {MascotaCreateDto} from "./dto/mascota.create-dto";
 import {validate, ValidationError} from "class-validator";
 // http://localhost:3001/juegos-http

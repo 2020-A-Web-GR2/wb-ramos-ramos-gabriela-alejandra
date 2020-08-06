@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,6 +35,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="ts.external.directory.path" value="C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\01-http\introduccion\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\01-http\introduccion\src\http" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,6 +53,7 @@
       <updated>1596313445337</updated>
       <workItem from="1596313446490" duration="2818000" />
       <workItem from="1596590849652" duration="14679000" />
+      <workItem from="1596681540095" duration="5113000" />
     </task>
     <servers />
   </component>
