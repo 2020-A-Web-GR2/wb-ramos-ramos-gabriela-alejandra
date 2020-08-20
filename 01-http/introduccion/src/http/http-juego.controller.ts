@@ -26,11 +26,11 @@ export class HttpJuegoController {
 
 //falta el metodo
 
-    @Get("hola")
+    @Get("hola2")
     @HttpCode(201)
     holaGet(){
         throw new BadRequestException("No envia nada")
-        //return "Hola Get! :D";
+        return "Hola Get! :D";
     }
 
     @Post("hola")
