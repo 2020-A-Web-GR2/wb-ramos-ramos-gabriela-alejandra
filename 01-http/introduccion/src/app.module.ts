@@ -17,14 +17,14 @@ import {UsuarioEntity} from "./usuario/usuario.entity";
           name: 'default', // nombre conexión
           type: 'mysql', // mysql postgres
           host: 'localhost', // ip
-          port: 32769, // puerto
-          username: 'israel', // usuario
-          password: '12345678', // password
+          port: 3306, // puerto
+          username: 'root', // usuario
+          password: 'root', // password
           database: 'ejemplo', //  Base de Datos
           entities: [  // TODAS LAS ENTIDADES
-        //    UsuarioEntity
+            UsuarioEntity
           ],
-          synchronize: false, // Actualiza el esquema de la base de datos
+          synchronize: true, // Actualiza el esquema de la base de datos
           dropSchema: false, // Eliminar Datos y el Esquema de base de datos
         }),
 
