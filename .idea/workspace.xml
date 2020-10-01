@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/01-http" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,13 +35,15 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\Deberes\ramos\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Github-gaby\wb-ramos-ramos-gabriela-alejandra\examen2\pais\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gabyl\OneDrive\Documentos\GitHub-Repos\web\wb-ramos-ramos-gabriela-alejandra\Deberes\examen\src\examen" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -62,11 +64,12 @@
       <workItem from="1596678819892" duration="7828000" />
       <workItem from="1596687553839" duration="1945000" />
       <workItem from="1596690222891" duration="8121000" />
+      <workItem from="1601533543423" duration="2530000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="633" y="291" key="#ESLint" timestamp="1595477528168">
