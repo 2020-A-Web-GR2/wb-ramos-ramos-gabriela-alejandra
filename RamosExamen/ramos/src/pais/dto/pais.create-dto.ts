@@ -11,27 +11,27 @@ import {
 } from "class-validator";
 
 export class PaisCreateDto{
-    @IsNotEmpty()
+
     @IsAlpha()
     @MaxLength(60)
     @MinLength(3)
     nombre:string;
 
-    @IsNotEmpty()
     @IsAlpha()
     @MaxLength(30)
+    @MinLength(3)
     capital:String;
 
-    @IsNotEmpty()
-    @IsAlpha()
+    @IsOptional()
+    @MinLength(2)
     poblacion:string;
 
     @IsOptional()
-    @IsAlpha()
+    @MinLength(1)
     numeroEstaciones:string;
 
 
     @IsOptional()
-    @IsAlpha()
+    @MinLength(2)
     fundacion:string;
 }

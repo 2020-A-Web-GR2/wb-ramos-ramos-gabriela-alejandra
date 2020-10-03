@@ -9,29 +9,30 @@ import {
 } from 'class-validator';
 
 export class PaisUpdateDto {
+    @IsEmpty()
+    id?:number;
 
-    @IsNotEmpty()
     @IsAlpha()
     @MaxLength(60)
     @MinLength(3)
     nombre:string;
 
-    @IsNotEmpty()
+    @IsOptional()
     @IsAlpha()
     @MaxLength(30)
     capital:string;
 
-    @IsNotEmpty()
-    @IsAlpha()
+    @IsOptional()
+    @MinLength(1)
     poblacion:string;
 
     @IsOptional()
-    @IsAlpha()
+    @MinLength(2)
     numeroEstaciones:string;
 
 
     @IsOptional()
-    @IsAlpha()
+    @MinLength(2)
     fundacion:string;
 
 }

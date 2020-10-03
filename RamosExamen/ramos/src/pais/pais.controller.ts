@@ -1,4 +1,5 @@
 import {
+    BadRequestException,
     Body,
     Controller,
     Get,
@@ -34,7 +35,7 @@ export class paisController{
         try {
             resultadoEncontrado = await this._PaisService.buscarTodos(parametrosConsulta.busqueda);
         } catch (error) {
-            throw new InternalServerErrorException('Error Buscando Paises')
+            throw new InternalServerErrorException('Error encontrando pais')
         }
         if (resultadoEncontrado) {
             res.render(
@@ -45,11 +46,20 @@ export class paisController{
                     mensaje: parametrosConsulta.mensaje
                 });
         } else {
-            throw new NotFoundException('No se encontraron paises')
+            throw new NotFoundException('No se encontraron pais')
         }
     }
 
-    @Get('/crear')
+
+
+
+
+
+
+
+
+
+    @Get('crear')
     vistaCrear(
         @Res() res,
         @Query() parametrosConsulta,
@@ -66,7 +76,7 @@ export class paisController{
                 capital: parametrosConsulta.capital,
                 poblacion: parametrosConsulta.poblacion,
                 numeroEstaciones: parametrosConsulta.numeroEstaciones,
-                fundacion: parametrosConsulta.Fundacion
+                fundacion: parametrosConsulta.fundacion
 
             }
         )
@@ -88,11 +98,12 @@ export class paisController{
                     {
                         usuario: session.usuario,
                         error: parametrosConsulta.error,
-                        pais: paisEncontrado
+                         pais : paisEncontrado
+
                     }
                 )
             }else{
-                return res.redirect('../pais?mensaje= no encontrado')
+                return res.redirect('../pais?mensaje= PAIS no encontrado')
             }
         } catch (e) {
             console.error('Error del servidor')
@@ -113,7 +124,7 @@ export class paisController{
         pais.capital = parametrosCuerpo.capital;
         pais.poblacion = parametrosCuerpo.poblacion;
         pais.numeroEstaciones = parametrosCuerpo.numeroEstaciones;
-        pais.fundacion = parametrosCuerpo.Fundacion;
+        pais.fundacion = parametrosCuerpo.fundacion;
 
         let errores: ValidationError[]
         try{
@@ -126,7 +137,7 @@ export class paisController{
         }
         if (errores.length > 0) {
             console.error('Error', errores);
-            return res.redirect('editar/' + parametrosRuta.id + '?error=Error en los datos');
+            return res.redirect('/pais/editar/' + parametrosRuta.id +'?error=Error validando datos')
         }else {
             const paisEditado = {
                 id: Number(parametrosRuta.id),
@@ -134,7 +145,7 @@ export class paisController{
                 capital: parametrosCuerpo.capital,
                 poblacion: parametrosCuerpo.poblacion,
                 numeroEstaciones: parametrosCuerpo.numeroEstaciones,
-                fundacion: parametrosCuerpo.Fundacion
+                fundacion: parametrosCuerpo.fundacion
 
             } as PaisEntity;
             try {
@@ -142,7 +153,7 @@ export class paisController{
                 return res.redirect('/pais?mensaje=pais Editado');
             } catch (error) {
                 console.error(error);
-                return res.redirect('editar/' + parametrosRuta.id + '?error=Error al editar pais');
+                return res.redirect('pais/' + parametrosRuta.id + '?error=Error al editar pais');
             }
         }
     }
@@ -158,9 +169,9 @@ export class paisController{
         pais.capital = parametrosCuerpo.capital;
         pais.poblacion = parametrosCuerpo.poblacion;
         pais.numeroEstaciones = parametrosCuerpo.numeroEstaciones;
-        pais.fundacion = parametrosCuerpo.edicion.Fundacion;
+        pais.fundacion = parametrosCuerpo.fundacion;
 
-        const paisConsulta = `&nombre=${parametrosCuerpo.nombre}&capital=${parametrosCuerpo.capital}&poblacion=${parametrosCuerpo.poblacion}&numeroEstaciones=${parametrosCuerpo.numeroEstaciones}&anoFundacion=${parametrosCuerpo.anoFundacion}`
+        const paisConsulta = `&nombre=${parametrosCuerpo.nombre}&capital=${parametrosCuerpo.capital}&poblacion=${parametrosCuerpo.poblacion}&numeroEstaciones=${parametrosCuerpo.numeroEstaciones}&fundacion=${parametrosCuerpo.fundacion}`
         let errores: ValidationError[]
         try{
 
@@ -173,15 +184,15 @@ export class paisController{
         }
 
         if (errores.length > 0) {
-            console.error('Error', errores);
-            return res.redirect('crear?error=Error en los datos' + paisConsulta);
+            console.error('AQUIIII', errores);
+            return res.redirect('crear?error=Error datos incorrectos');
         }else{
             let respuestaCreacionUsuario
             try{
                 respuestaCreacionUsuario = await this._PaisService.crearUno(parametrosCuerpo)
             } catch (error) {
                 console.log(error);
-                return res.redirect('crear?error=Error creando ' + paisConsulta);
+                return res.redirect('pais/crear?error=Error creando ' + paisConsulta);
             }
             if(respuestaCreacionUsuario){
                 return res.redirect('../pais?mensaje= creado')
@@ -206,5 +217,38 @@ export class paisController{
         }
 
     }
+
+
+    @Get("/casa/editar/:id")
+    async editarContactoVista(
+        @Query() parametrosConsulta,
+        @Param() parametrosRuta,
+        @Res() res,
+        @Session() session
+    ){
+
+        const id = Number(parametrosRuta.id);
+        let entrenadorEncontrado;
+
+        try {
+            entrenadorEncontrado = await this._PaisService.buscarUno(id);
+        } catch(error){
+            console.log("errrorr GABY");
+            return res.redirect("/pais?mensaje=Error buscando entrenador");
+        }
+        if(entrenadorEncontrado){
+            return res.render(
+                'pais/crear',
+                {
+                    error: parametrosConsulta.error,
+                    usuario: session.usuario,
+                    pais: entrenadorEncontrado
+                }
+            )
+        } else {
+            return res.redirect("/pais?mensaje=Entrenador no encontrada");
+        }
+    }
+
 
 }

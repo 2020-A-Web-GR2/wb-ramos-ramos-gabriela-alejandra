@@ -48,9 +48,9 @@ export class PaisEntity {
     numeroEstaciones: string;
 
     @Column({
-        name: 'añoFundacion',
+        name: 'fundacion',
         type: 'varchar'
     })
-    fundacion?: string;
+    fundacion: string;
 
 }
